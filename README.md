@@ -11,13 +11,13 @@
 ### Check emulator port
 Running `adb devices` the result should show you something like **"emulator-[port]   device"**
 
-###Run Server
+### Run Server
 To run the emulator as a server we will be using a nice tutorial from [hasper.info by Philipp Hasper:](https://hasper.info/remote-android-emulator/).
 
 Download the [PortForward](http://www.quantumg.net/portforward.php) windows binary and then run on your terminal:
  `~\trivial_portforward\trivial_portforward.exe [emulator-port] 127.0.0.1 5555`
 
-###Connect client
+### Connect client
 Now, on your client PC, run `adb kill-server` & `adb connect [server-pc-IP]:[emulator-port]`.
 If everything goes well, the terminal should show you a message like: 
 **"connected to [server-pc-IP]:[emulator-port]"**.
